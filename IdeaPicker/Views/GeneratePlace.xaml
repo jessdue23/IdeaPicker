@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IdeaPicker.Views.GeneratePlace">
+    <ContentPage.Content>
+        <StackLayout Padding="20,20">
+            <Label x:Name="txtGeneratedRestaurant" Text="Click to Generate a Restaurant" FontSize="Large" Padding="0,10,0,10"></Label>
+            <Button Text="Generate Restaurant" Clicked="Generate_OnClicked"></Button>
+            <Border Stroke="gray" StrokeThickness="1">
+                <ListView x:Name="lstRestaurants" VerticalOptions="Fill" ></ListView>
+            </Border>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
